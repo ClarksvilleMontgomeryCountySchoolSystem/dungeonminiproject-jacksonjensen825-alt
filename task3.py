@@ -1,6 +1,42 @@
+good = (r"""
+Shadow: Sneak by the guard before he wakes up
+                   z
+                             z
+                              Z
+                    .--.  Z Z
+                   / _(c\   .-.     __
+                  | / /  '-;   \'-'`  `\______
+                  \_\/'/ __/ )  /  )   |      \--,
+                  | \`""`__-/ .'--/   /--------\  \
+                   \\`  ///-\/   /   /---;-.    '-'
+             jgs                (________\  \
+                                          '-'
+""")
+
+bad = (r""" 
+Doom: The guard caught me! Oh no!
+                   _.--.    .--._
+                 ."  ."      ".  ".
+                ;  ."    /\    ".  ;
+                ;  '._,-/  \-,_.`  ;
+                \  ,`  / /\ \  `,  /
+                 \/    \/  \/    \/
+                 ,=_    \/\/    _=,
+                 |  "_   \/   _"  |
+                 |_   '"-..-"'   _|
+                 | "-.        .-" |
+                 |    "\    /"    |
+                 |      |  |      |
+         ___     |      |  |      |     ___
+     _,-",  ",   '_     |  |     _'   ,"  ,"-,_
+   _(  \  \   \"=--"-.  |  |  .-"--="/   /  /  )_
+ ,"  \  \  \   \      "-'--'-"      /   /  /  /  ".
+!     \  \  \   \                  /   /  /  /     !
+:      \  \  \   \                /   /  /  /      TK
+""")
 guard_awake = False
 if guard_awake:
-    outcome = "Doom: He sends me back to the dungeon"
+    outcome = bad
 else:
-    outcome = "Shadow: I sneak by before he wakes up"
+    outcome = good
 print(outcome)
